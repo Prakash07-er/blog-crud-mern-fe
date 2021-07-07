@@ -29,7 +29,7 @@ export default function Food() {
 
     useEffect( () => {
         const fetchData = async () => {
-               const res=await axios.get('/read')
+               const res=await axios.get('https://blog-crud-be.herokuapp.com/read')
                setFoodList(res.data)           
         }
         fetchData()
